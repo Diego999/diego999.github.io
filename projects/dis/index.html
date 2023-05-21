@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Dr. Diego Antognini</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="../../index.html" class="image avatar"><img src="../../images/avatar.jpg" alt="" /></a>
+				<h1 style="color:white;"><strong>Diego Antognini, PhD</h1>
+				<h1 style="color:white;">Research scientist and consultant in ML &amp; NLP</h1>
+				<h1 style="color:white;">Interests in efficient machine learning, self-supervision, text understanding, explainable AI, and conversational explainable recommender systems.</h1>
+			</header>
+		<!-- Main -->
+		<div id="main">
+
+<!-- Four -->
+<section id="project">
+	<div class="box alt">
+		<div class="row 50% uniform">
+			<div class="12u$"><span class="image fit"><img src="thumb.png" alt="" /></span></div>
+		</div>
+	</div>
+	<header>
+		<h2>Optimized flocking algorithm for e-pucks <a href="https://github.com/Diego999/DistributedIntelligentSystems" class="icon fa-github"> <span class="label">Github</span></a><a href="paper.pdf" class="icon fa-file-pdf-o"><span class="label">Paper</span></a></h2>
+		<p style="text-align: justify;">Project about flocking algorithms using small robots. Multidisciplinary team with a computer engineer and a mechanical engineer.<br /><b>C, Webots</b></p>
+	</header>
+
+	<p style="text-align: justify;">The goal of the project is to implement, test, analyze, and optimize a flocking algorithm for e-pucks on the Webots simulator. The algorithm should provide the robots with the ability to 1) avoid obstacles within the arena while retaining the collective formation, and 2) maintain collective formation while two different flocks of robots cross each other moving in opposite directions. The analysis should evaluate the performance and scalability of the algorithm for increasing dimensions of the e-pucks swarm. The second part of this project consist in optimizing the behavior of the robots. For this purpose, an appropriate fitness function has been designed along with an optimization method. There are a number of parameters that shape the navigation behavior and need to be considered by the optimization methods. We are interested in seeing the resulting behavior of the optimized controllers using Particle Swarm Optimization. Evaluation of the project was based on the final performance of the navigation with and without optimization, the effectiveness of the designed fitness function, and the discussion that the students make on the comparison of the two steps.</p>
+	<div style="text-align:center;">
+		<video width="432" height="360" controls>
+			<source src="obstacles.mov" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+
+		<video width="580" height="360" controls>
+			<source src="crossing.mov" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+	</div>
+	<hr />
+
+	<section>
+		<h3>The Project</h3>
+		<span class="image left"><img src="flock.png" alt="" /></span>
+		<h4>Flocking behaviour</h4>
+		<p style="text-align: justify;">One of the implemented controllers uses the Reynolds flocking rules. It works by having a supervisor that knows the position of all the robots in a world and computes a direction vector for each robot. Flocking is achieved as each robot follows its direction vector. The direction is computed in a way that the robots want to come together, while also avoiding collisions. This direction vector is the sum of multiple sub-vectors that ensure flock behavior: Cohesion (moving towards the center of mass of the flock), Dispersion (moving away from other robots), Consistency (moving at the same speed as the flock), and Migration (moving towards an arbitrary point).</p>
+
+		<span class="image right"><img src="motion.jpg" alt="" /></span>
+		<h4 style="text-align=right">An recursive neural network to control the motion control</h4>
+		<p style="text-align: justify;">We utilized unsupervised learning to determine the weights of the proximity sensors of the e-puck. We constructed a recursive neural network comprising of two neurons, each responsible for controlling the speed of a wheel, employing sigmoidal output functions. The inputs consist of the eight proximity sensors (one for each wheel), along with a recursive connection from the neuron's previous output, lateral inhibitions, and two bias factors.</p>
+
+		<span class="image left"><img src="pso.png" alt="" /></span>
+		<h4>Particle Swarm Optimization</h4>
+		<p style="text-align: justify;">Particle swarm optimization (PSO) is a metaheuristic technique that can be utilized to search for candidate solutions in a large combinatorial space. Additionally, it can be adapted to be noise-resistant. PSO has been employed to optimize the Braitenberg parameters for the Reynolds controller, as well as for the Kikker controller. We have implemented PSO in a noise-resistant manner to achieve a more accurate approximation of the fitness function. Moreover, we have implemented it in a distributed manner to reduce the training time.</p>
+		<hr />
+	</section>
+
+	<section>
+		<h3>Miscellaneous</h3>
+		<div class="row">
+			<div class="6u 12u$(small)">
+				<div class="table-wrapper">
+					<table>
+						<tbody>
+							<tr>
+								<td><b>Type</b></td>
+								<td>Course project</td>
+							</tr>
+							<tr>
+								<td><b>Degree</b></td>
+								<td>M.Sc. <a href="http://www.epfl.ch">EPFL</a>, 1<sup>st</sup> semester</td>
+							</tr>
+							<tr>
+								<td><b>Course</b></td>
+								<td>Distributed intelligent systems</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="6u 12u$(small)">
+				<div class="table-wrapper">
+					<table>
+						<tbody>
+							<tr>
+								<td><b>Duration</b></td>
+								<td>~50 hours</td>
+							</tr>
+							<tr>
+								<td><b>Supervisor</b></td>
+								<td><a href="https://ch.linkedin.com/in/inavarro">Dr. Inaki Navarro Oiza</a></td>
+							</tr>
+							<tr>
+								<td><b>Co-developer</b></td>
+								<td><a href="https://ch.linkedin.com/in/damiendoy">Damien Doy</a>, <a href="https://ch.linkedin.com/in/martin-d-hoffschmidt-91b5a130">Martin d'Hoffschmidt</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div style="text-align: center;">
+		<ul class="actions">
+			<li><a href="../../index.html#projects" class="button">Go back to projects</a></li>
+		</ul>
+	</div>
+</section>
+</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/diegoantognini" class="icon fa-linkedin" style="color: white;"><span class="label" style="color: white;">LinkedIn</span></a></li>
+					<li><a href="https://github.com/Diego999" class="icon fa-github" style="color: white;"><span class="label" style="color: white;">Github</span> (2.8k&#9733;)</a></li>
+					<li><a href="mailto:diegoantognini@gmail.com" class="icon fa-envelope-o" style="color: white;"><span class="label" style="color: white;">Email</span></a></li>
+					<li><a href="../../cv_en.pdf"><span class="label" style="color: white;">Résumé</span></a></li>
+					<li><a href="https://scholar.google.com/citations?user=YvtRscgAAAAJ&hl=en"><span class="label" style="color: white;">Google scholar</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li><a href="#">&copy; 2023 Diego Antognini</a></li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/jquery.poptrox.min.js"></script>
+			<script src="../../assets/js/skel.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+
+	</body>
+</html>

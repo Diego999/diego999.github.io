@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Dr. Diego Antognini</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="../../index.html" class="image avatar"><img src="../../images/avatar.jpg" alt="" /></a>
+				<h1 style="color:white;"><strong>Diego Antognini, PhD</h1>
+				<h1 style="color:white;">Research scientist and consultant in ML &amp; NLP</h1>
+				<h1 style="color:white;">Interests in efficient machine learning, self-supervision, text understanding, explainable AI, and conversational explainable recommender systems.</h1>
+			</header>
+		<!-- Main -->
+		<div id="main">
+
+<!-- Four -->
+<section id="project">
+	<div class="box alt">
+		<div class="row 50% uniform">
+			<div class="12u$"><span class="image fit"><img src="thumb.jpg" alt="" /></span></div>
+		</div>
+	</div>
+	<header>
+		<h2>Facial recognition among profiles <a href="https://github.com/Diego999/Image-Processing-Project" class="icon fa-github"> <span class="label">Github</span></a> <a href="https://github.com/Diego999/Artificial-Neural-Network" class="icon fa-github"> <span class="label">Github</span></a></h2>
+		<p style="text-align: justify;">Detect whether a person is wearing sunglasses using a collection of profile pictures of different individuals. Each person has pictures taken from different head angles, displaying different emotions, and with or without sunglasses.<br /><b>C++, Qt, OpenCV</b></p>
+	</header>
+
+	<p style="text-align: justify;">The purpose of this project, which originates from Tom Michell's book "Machine Learning", is to classify a set of profile pictures of different individuals. Each person has pictures with varying head positions, emotions, and the presence or absence of sunglasses. Our objective was to detect whether a person is wearing sunglasses or not. We have implemented a complete artificial neural network, available on <a href="https://github.com/Diego999/Artificial-Neural-Network" class="icon fa-github"> <span class="label">Github</span></a>, using backpropagation to compute the error. We have improved our system to optimize the success rate. Additionally, we have developed various validation methods, including a normal approach with one training set and one validation set, as well as k-fold cross-validation. A GUI has been developed using the Qt framework.</p>
+	<hr />
+
+	<section>
+		<h3>The Project</h3>
+		<span class="image left"><img src="face_threshold.png" alt="" /></span>
+		<h4>Profile images</h4>
+		<p style="text-align: justify;">Our dataset comprises images of 40 students enrolled in the course taught by Tom Mitchell. Each student possesses 32 pictures depicting them with various head positions (e.g., top, right), emotions (e.g., neutral, happy), and with or without sunglasses. As a preprocessing step, we employed binary Otsu's segmentation to convert the images from grayscale to binary, enabling each pixel to have only two possible values.</p>
+
+		<span class="image right"><img src="model.png" alt="" /></span>
+		<h4 style="text-align=right">Artificial neural networks <a href="https://github.com/Diego999/Artificial-Neural-Network" class="icon fa-github"> <span class="label">Github</span></a></h4>
+		<p style="text-align: justify;">We have implemented our own feed-forward neural networks, utilizing backpropagation to propagate the error, momentum to improve convergence, and random weight initialization. Additionally, we have implemented all the necessary functions to perform cross-validation, data shuffling, and data splitting.</p>
+
+		<span class="image left"><img src="errors.png" alt="" /></span>
+		<h4>Training</h4>
+		<p style="text-align: justify;">To learn the different weights and neural network parameters (such as the number of hidden layers, number of neurons, etc.), we utilized cross-validation with training, validation, and testing sets. The training set was used for learning, the validation set for parameter tuning, and finally, the testing set for approximating the generalized error (which should be unbiased).</p>
+		<hr />
+	</section>
+
+	<section>
+		<h3>Miscellaneous</h3>
+		<div class="row">
+			<div class="6u 12u$(small)">
+				<div class="table-wrapper">
+					<table>
+						<tbody>
+							<tr>
+								<td><b>Type</b></td>
+								<td>Course project</td>
+							</tr>
+							<tr>
+								<td><b>Degree</b></td>
+								<td>B.Sc. <a href="http://www.he-arc.ch">HE-Arc</a>, 3<sup>rd</sup> year</td>
+							</tr>
+							<tr>
+								<td><b>Course</b></td>
+								<td>Image processing</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="6u 12u$(small)">
+				<div class="table-wrapper">
+					<table>
+						<tbody>
+							<tr>
+								<td><b>Duration</b></td>
+								<td>~30 hours</td>
+							</tr>
+							<tr>
+								<td><b>Supervisor</b></td>
+								<td><a href="https://ch.linkedin.com/in/fran%C3%A7ois-ti%C3%A8che-7b18674">Prof. François Tièche</a></td></td>
+							</tr>
+							<tr>
+								<td><b>Co-developer</b></td>
+								<td><a href="https://www.linkedin.com/in/alexandre-perez-38962244">Alexandre Perez</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div style="text-align: center;">
+		<ul class="actions">
+			<li><a href="../../index.html#projects" class="button">Go back to projects</a></li>
+		</ul>
+	</div>
+</section>
+</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/diegoantognini" class="icon fa-linkedin" style="color: white;"><span class="label" style="color: white;">LinkedIn</span></a></li>
+					<li><a href="https://github.com/Diego999" class="icon fa-github" style="color: white;"><span class="label" style="color: white;">Github</span> (2.8k&#9733;)</a></li>
+					<li><a href="mailto:diegoantognini@gmail.com" class="icon fa-envelope-o" style="color: white;"><span class="label" style="color: white;">Email</span></a></li>
+					<li><a href="../../cv_en.pdf"><span class="label" style="color: white;">Résumé</span></a></li>
+					<li><a href="https://scholar.google.com/citations?user=YvtRscgAAAAJ&hl=en"><span class="label" style="color: white;">Google scholar</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li><a href="#">&copy; 2023 Diego Antognini</a></li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/jquery.poptrox.min.js"></script>
+			<script src="../../assets/js/skel.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+
+	</body>
+</html>
